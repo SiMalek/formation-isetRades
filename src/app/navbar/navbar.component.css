@@ -1,0 +1,34 @@
+/* New creative navbar style */
+.navbar {
+    background: linear-gradient(135deg, #FF7E5F, #FEB47B); /* Gradient background */
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Text styling for the brand */
+  .navbar .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  /* Remove the default border and add rounded corners to buttons */
+  .navbar .nav-link {
+    font-weight: 500;
+    border-radius: 20px;
+  }
+  
+  .navbar .btn-outline-light {
+    border-radius: 20px; /* Rounded corners for button */
+  }
+  
+  /* Modal custom styling */
+  .modal-footer .btn {
+    border-radius: 10px;
+  }
+  
+  /* Add shadow to the navbar */
+  .navbar .container-fluid {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  

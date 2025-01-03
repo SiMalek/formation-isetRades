@@ -1,0 +1,50 @@
+.container {
+    max-width: 1200px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+h2, h3, h4 {
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.btn-primary, .btn-success {
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+form .form-control {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+}
+
+form .form-control:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.25);
+}
+
+form button {
+    border-radius: 25px;
+    font-weight: bold;
+}

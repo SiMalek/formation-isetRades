@@ -1,0 +1,28 @@
+.bg-gradient {
+    background: linear-gradient(45deg, #007bff, #6610f2);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.btn-outline-primary {
+    border-color: #6610f2;
+    color: #6610f2;
+}
+
+.btn-outline-primary:hover {
+    background-color: #6610f2;
+    color: white;
+}
+
+.list-group-item {
+    border: none;
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}

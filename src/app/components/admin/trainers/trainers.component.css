@@ -1,0 +1,107 @@
+.container {
+    background-color: #f4f7fa;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.trainer-list {
+    margin-bottom: 40px;
+}
+
+.trainer-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        background-color: #e9f7fd;
+        transform: translateY(-5px);
+    }
+
+    .trainer-info {
+        flex: 1;
+        .trainer-name {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        small {
+            font-size: 14px;
+            color: #777;
+        }
+    }
+
+    .trainer-actions {
+        .btn {
+            margin-left: 5px;
+        }
+    }
+}
+
+.form-title {
+    font-size: 28px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.trainer-form {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
+    .form-control {
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        transition: all 0.3s ease;
+
+        &:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+    }
+
+    .btn {
+        font-weight: bold;
+        padding: 12px 20px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+
+        &.btn-primary {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        &.btn-secondary {
+            background-color: #6c757d;
+            color: #fff;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+<div class="container mt-4">
+    <h2 class="section-title">Gestion des Formations</h2>
+    <ul class="list-group formation-list">
+        <li *ngFor="let formation of formations" class="list-group-item formation-item">
+            <div class="formation-details">
+                <p class="formation-title">{{ formation.title }}</p>
+                <p class="formation-description">Description: {{ formation.description }}</p>
+            </div>
+            <div class="formation-actions">
+                <button class="btn btn-warning btn-sm me-2" (click)="editFormation(formation)">Modifier</button>
+                <button class="btn btn-danger btn-sm" (click)="deleteFormation(formation.id)">Supprimer</button>
+            </div>
+        </li>
+    </ul>
+
+    <h3 class="mt-4 form-title">{{ isEditing ? 'Modifier Formation' : 'Ajouter Formation' }}</h3>
+    <form (ngSubmit)="isEditing ? updateFormation() : addFormation()">
+        <div class="form-group">
+            <label for="title">Titre</label>
+            <input type="text" class="form-control" id="title" [(ngModel)]="selectedFormation.title" name="title" required>
+        </div>
+        <div class="form-group">
+            <label for="description">Description</label>
+            <textarea class="form-control" id="description" [(ngModel)]="selectedFormation.description" name="description" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">{{ isEditing ? 'Modifier' : 'Ajouter' }}</button>
+    </form>
+</div>
